@@ -11,13 +11,13 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-lg bg-black">
         <div class="container-fluid px-5">
                 <a href="home.html"><img src="Netflix-assets/assets/netflix_logo.png" id="logo" width="100"></a>
         </div>
     </nav>
     <div class="profile-page">
-        <div class="container-fluid bg-dark">
+        <div class="container-fluid bg-black">
             <div class="row justify-content-center">
                 <div class="col-4">
                     <h1 class="text-light ">Edit Profile</h1>
@@ -28,19 +28,25 @@
                             <img src="Netflix-assets/assets/avatar.png" class="img-fluid" width="150px">
                         </div>
                         <div class="col-12 col-md">
-                            <input class="form-control border-0 rounded-0 bg-secondary text-white" value="Inserisci Nome" type="text" />
-                            <div class="mb-4 mt-4">
+                            <input class="form-control border-0 rounded-0 bg-secondary text-white" value="Stride Student" type="text" />
+                            <div class="dropdown mb-4 mt-4">
                                 <h4 class="text-muted">Language:</h4>
-                                <button class="btn  text-bg-secondary mt-2 dropdown-toggle bg-black border-white"><span
-                                        class="pe-4">English</span></button>
+                                <button class="btn  text-bg-secondary mt-2 dropdown-toggle bg-black border-white rounded-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><span
+                                        class="pe-4 ">English</span></button>
+                                        <ul class="dropdown-menu bg-black" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item text-secondary " href="#">Italiano</a></li>
+                                            <li><a class="dropdown-item text-secondary" href="#">Spagnolo</a></li>
+                                            <li><a class="dropdown-item text-secondary" href="#">Francese</a></li>
+                                            <li><a class="dropdown-item text-secondary" href="#">Tedesco</a></li>
+                                          </ul>
                             </div>
                             <hr class="text-bg-secondary">
                             <div class="mt-2 pb-2">
                                 <h4 class="text-muted">Maturity Settings:</h4>
-                                <button class="btn btn-dark fw-bold my-2">ALL MATURITY SETTINGS</button>
+                                <button class="btn btn-dark fw-bold my-2 rounded-1">ALL MATURITY SETTINGS</button>
                                 <p class="text-light mt-2">Show files for all maturity settings for this profile.
                                 </p>
-                                <button class="btn btn-outline-secondary px-4">EDIT</button>
+                                <button class="btn btn-outline-secondary px-4 rounded-0 lh-2">EDIT</button>
                             </div>
 
                             <hr class="my-4 text-bg-secondary" >
@@ -49,14 +55,14 @@
                                 <h4 class="text-muted">Autoplay Controls:</h4>
                                 <div class="d-flex align-items-center">
                                     <div class="me-2">
-                                        <input class="form-check-input bg-transparent border-white opacity-50 rounded-0"
-                                            type="checkbox" checked>
+                                        <input class="form-check-input bg-transparent border-white opacity-50 rounded-0 p-3"
+                                            type="checkbox" checked >
                                     </div>
                                     <div class=" text-white">Autoplay next episode in a series on all devices</div>
                                 </div>
                                 <div class="d-flex align-items-center mt-2">
                                     <div class="me-2">
-                                        <input class="form-check-input bg-transparent border-white opacity-50 rounded-0"
+                                        <input class="form-check-input bg-transparent border-white opacity-50 rounded-0 p-3"
                                             type="checkbox" checked>
                                     </div>
                                     <div class=" text-white">Autoplay next episode in a series on all devices</div>
@@ -65,15 +71,15 @@
                         </div>
                     </div>
                     <hr class="my-4">
-                    <div class="action-buttons row pt-2">
+                    <div class="action-buttons row pt-2 pb-5">
                         <div class="col-auto">
-                            <button class="btn btn-light fw-bold px-4">SAVE</button>
+                            <button class="btn btn-light fw-bold px-4 rounded-0">SAVE</button>
                         </div>
                         <div class="col-auto">
-                            <button class="btn btn-outline-secondary px-5">CANCEL</button>
+                            <button class="btn btn-outline-secondary px-a rounded-0">CANCEL</button>
                         </div>
                         <div class="col-auto">
-                            <button class="btn btn-outline-secondary px-5 ">DELETE PROFILE</button>
+                            <button class="btn btn-outline-secondary px-4 rounded-0">DELETE PROFILE</button>
                         </div>
                     </div>
                 </div>
